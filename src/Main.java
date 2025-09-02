@@ -31,10 +31,7 @@ public class Main {
         Double amount = sc.nextDouble();
         acc.withdraw(amount);
     }
-    catch (InputMismatchException e) {
-        System.out.println("Invalid input");
-    }
-    catch (AccountException e) {
+    catch (InputMismatchException | AccountException e) {
         System.out.println("Invalid input");
     }
 

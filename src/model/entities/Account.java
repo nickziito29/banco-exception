@@ -64,7 +64,8 @@ public class Account {
             throw new  AccountException("Withdraw error: Not enough balance");
         } else {
             this.balance -= amount;
-            System.out.println("New Balance: " +  String.format("%.2f",this.balance));
+            System.out.println("New Balance: "
+                    +  String.format("%.2f",this.balance));
         }
     }
 
