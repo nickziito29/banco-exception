@@ -56,11 +56,11 @@ public class Account {
 
     public void withdraw(Double amount) throws AccountException {
         // Comparação da quantia desejada para o limite de saque da conta.
-        if (amount > withdrawLimit) {
+        if (amount > getWithdrawLimit()) {
             throw new AccountException("Withdraw error: The amount exceeds withdraw limit");
         }
         // Comparação da quantia desejada e o saldo da conta.
-        if (amount > this.balance){
+        if (amount > getBalance()){
             throw new  AccountException("Withdraw error: Not enough balance");
         } else {
             this.balance -= amount;

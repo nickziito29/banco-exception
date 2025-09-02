@@ -34,8 +34,6 @@ public class Main {
     catch (InputMismatchException | AccountException e) {
         System.out.println("Invalid input");
     }
-
-
-        sc.close();
+    sc.close();
     }
 }
